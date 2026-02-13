@@ -53,9 +53,9 @@ else
 		teleportscandistance = 0
 		x = teleportx
 		y = teleporty
-		if place_meeting(x+sign(hsp),y+sign(vsp),obj_mapparent)
+		if func_placemeetingpath(x+hsp,y+vsp,obj_mapparent)
 		{
-			var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_mapparent)
+			var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_mapparent)
 			func_performknockback(_collidingobject)
 		}
 		teleporting = false
@@ -72,9 +72,9 @@ if place_meeting(x,y,obj_mapparent)
 	//show_debug_message("stuck inside solid, performing anti collision clip")
 	func_anticollisionclipping(obj_mapparent)
 }
-if place_meeting(x+sign(hsp),y+sign(vsp),obj_mapparent)
+if place_meeting(x+hsp,y+vsp,obj_mapparent)
 {
-	var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_mapparent)
+	var _collidingobject = instance_place(x+hsp,y+vsp,obj_mapparent)
 	func_performknockback(_collidingobject)
 }
 

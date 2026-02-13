@@ -6,7 +6,8 @@ func_move_towards_point_alt(targetangle,currentmovespeed)
 func_outofboundsmeasure()
 
 var _collidables = [obj_mapparent,obj_horseparent]
-move_and_collide(hsp,vsp,_collidables)
+//move_and_collide(hsp,vsp,_collidables)
+func_collide(_collidables)
 
 if stepsoundcooldown > 0
 	stepsoundcooldown--
@@ -47,15 +48,17 @@ if place_meeting(x,y,obj_horseparent)
 	//show_debug_message("stuck inside horse, performing anti collision clip")
 	func_anticollisionclipping(obj_horseparent)
 }
-if place_meeting(x+sign(hsp),y+sign(vsp),obj_mapparent)
+if func_placemeetingpath(x+hsp,y+vsp,obj_mapparent)
 {
-	var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_mapparent)
+	//var _collidingobject = instance_place(x+hsp,y+vsp,obj_mapparent)
+	var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_mapparent)
 	func_performknockback(_collidingobject)
 }
 
-if place_meeting(x+sign(hsp),y+sign(vsp),obj_horseparent)
+if func_placemeetingpath(x+hsp,y+vsp,obj_horseparent)
 {
-	var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_horseparent)
+	// _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_horseparent)
+	var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_horseparent)
 	func_performknockback(_collidingobject)
 }
 if place_meeting(x,y,obj_goal) && global.REMAINING_WIN_SLOTS > 0 && global.GAME_STATE = "normal"

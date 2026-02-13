@@ -7,7 +7,8 @@ if disappearing == false
 	targetangle = point_direction(x,y,x+hsp,y+vsp)
 
 	var _collidables = [obj_mapparent,obj_horseparent]
-	move_and_collide(hsp,vsp,_collidables)
+	//move_and_collide(hsp,vsp,_collidables)
+	func_collide(_collidables)
 
 	/*
 	if targetangle < 90 || targetangle > 270
@@ -32,18 +33,18 @@ if disappearing == false
 	{
 		func_anticollisionclipping(obj_horseparent)
 	}
-	if place_meeting(x+sign(hsp),y+sign(vsp),obj_mapparent)
+	if func_placemeetingpath(x+hsp,y+vsp,obj_mapparent)
 	{
-		var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_mapparent)
+		var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_mapparent)
 		func_performknockback(_collidingobject)
 		//func_surfacebounce()
 		grav = 0
 		acceleration = 0
 		percievedangle = targetangle
 	}
-	if place_meeting(x+sign(hsp),y+sign(vsp),obj_horseparent)
+	if func_placemeetingpath(x+hsp,y+vsp,obj_horseparent)
 	{
-		var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_horseparent)
+		var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_horseparent)
 		/*
 		if room == rm_open && _collidingobject.object_index == obj_horse_pink
 		{

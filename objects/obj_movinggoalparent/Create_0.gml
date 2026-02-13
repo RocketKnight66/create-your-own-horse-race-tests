@@ -2,7 +2,6 @@
 // You can write your code in this editor
 event_inherited();
 func_collisioninit()
-func_collisioninit_pointdir()
 glowsprite = spr_horse_defaultdearly_glow
 
 horseidentity = "Default Dearly"

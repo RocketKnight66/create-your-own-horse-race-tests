@@ -2,7 +2,6 @@
 // You can write your code in this editor
 depth = -1
 func_collisioninit()
-func_collisioninit_pointdir()
 
 horseidentity = "Hook"
 hasdonecollisionthisframe = false

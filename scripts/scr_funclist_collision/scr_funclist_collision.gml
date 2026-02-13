@@ -2,155 +2,81 @@ function func_collisioninit()
 {
 	hsp = 0
 	vsp = 0
-	//mass = 1
-	//hdir = 1
-	//vdir = 1
 	hasdonecollisionthisframe = false
 }
-function func_physicsbounce()
+function func_solidcheck(_newx,_newy)
 {
-	
-}
-function func_solidcheck(argument0,argument1)
-{
-	///obsolete...maybe?
-	var old_x = x
-	var old_y = y
-	x = argument0
-	y = argument1
+	///deprecated and set for deletion, do not use
+	var _old_x = x
+	var _old_y = y
+	x = _newx
+	y = _newy
 	if place_meeting(x, y, obj_mapparent)
 	{
-	    x = old_x
-	    y = old_y
+	    x = _old_x
+	    y = _old_y
 	    return 1;
 	}
-	//if instance_exists(obj_platformdown)
-    //{
-	//	for (var i = 0; i < instance_number(obj_platformdown); i++)
-	//	{
-	//		enemy[i] = instance_find(obj_platformdown, i)
-	//		if (y > old_y) && ((!place_meeting(x, old_y, enemy[i])) && place_meeting(x, y, enemy[i]))
-	//		{
-	//			x = old_x
-	//			y = old_y
-	//			return 1;
-	//		}
-	//	}
-	//}
-	x = old_x
-	y = old_y
+	x = _old_x
+	y = _old_y
 	return 0;
 }
-function func_collide()
+function func_collide(_targetobjects=[obj_mapparent])
 {
-	///!!!OBSOLETE!!!
-	// CODE CLEANED UP
-	var i = abs(vsp);
-	var j = i;
-	var k = 0
-	var l = 0
-	var shifted = false
-	var maxdist = 12
+	///!!!BACK IN BUSINESS!!!
+	var _i = abs(vsp);
+	var _j = _i;
 
-	while (i > 0)
+	while (_i > 0)
 	{
-	    if !func_solidcheck(x, y + sign(vsp))
-	    {
-	        y += sign(vsp);
-	        j -= 1;
-		
-	        if j
-	            continue;
-	    }
-	    else  //shift to the side
+		var _foundcollision = false
+		var _amounttoadd = sign(vsp)
+		if _j < 1
+			_amounttoadd = _j*sign(vsp)
+		for (var _m = 0; _m < array_length(_targetobjects); _m++)
 		{
-			k = 0
-			l = floor(abs(vsp))
-			shifted = false
-			/*while k < maxdist
-			{
-				k++
-				if !func_solidcheck(x+(k*hdir), y + sign(vsp)) && l > 0
-				{
-					while l > 0
-					{
-						x += (hdir)
-						if !func_solidcheck(x, y + sign(vsp))
-							y += sign(vsp)
-						l--
-					}
-					shifted = true
-					break;
-				}
-				if !func_solidcheck(x+(k*-hdir), y + sign(vsp)) && l > 0
-				{
-					while l > 0
-					{
-						x += (-hdir)
-						if !func_solidcheck(x, y + sign(vsp))
-							y += sign(vsp)
-						l--
-					}
-					shifted = true
-					break;
-				}
-				
-			}*/
-			if shifted == false
-				vsp = 0;
+			if func_placemeetingalt(x,y+_amounttoadd,array_get(_targetobjects,_m))
+				_foundcollision = true
 		}
-		break; // not in original code put prevents the game from crashing
+	    if _foundcollision == false
+	    {
+	        y += _amounttoadd;
+	        _j -= abs(_amounttoadd);
+	        if _j > 0
+				continue;
+	    }
+	    else
+		{
+			//vsp = 0;
+		}
+		break;
 	}
 
-	i = abs(hsp);
-	j = i;
-	while (i > 0)
+	_i = abs(hsp);
+	_j = _i;
+	while (_i > 0)
 	{
-	    if !func_solidcheck(x + sign(hsp), y)
+		var _foundcollision = false
+		var _amounttoadd = sign(hsp)
+			if _j < 1
+				_amounttoadd = _j*sign(hsp)
+		for (var _m = 0; _m < array_length(_targetobjects); _m++)
+		{
+			if func_placemeetingalt(x+_amounttoadd,y,array_get(_targetobjects,_m))
+				_foundcollision = true
+		}
+	    if _foundcollision == false
 	    {
-	        x += sign(hsp);
-	        j -= 1;
-		
-	        if j
+	        x += _amounttoadd;
+	        _j -= abs(_amounttoadd);
+	        if _j > 0
 	            continue;
 	    }
-		else  //shift to the side
+		else
 		{
-			k = 0
-			l = floor(abs(hsp))
-			shifted = false
-			/*while k < maxdist
-			{
-				k++
-				if !func_solidcheck(x + sign(hsp), y+(k*vdir)) && l > 0
-				{
-					while l > 0
-					{
-						y += (vdir)
-						if !func_solidcheck(x + sign(hsp), y)
-							x += sign(hsp)
-						l--
-					}
-					shifted = true
-					break;
-				}
-				if !func_solidcheck(x + sign(hsp), y+(k*-vdir)) && l > 0
-				{
-					while l > 0
-					{
-						y += (-vdir)
-						if !func_solidcheck(x + sign(hsp), y)
-							x += sign(hsp)
-						l--
-					}
-					shifted = true
-					break;
-				}
-			}*/
-			if shifted == false
-				hsp = 0;
+			//hsp = 0;
 		}
-		break; // not in original code put prevents the game from crashing
+		break;
 	}
 }
 function func_move_towards_point_alt(argument0,argument1)
@@ -158,78 +84,57 @@ function func_move_towards_point_alt(argument0,argument1)
 	hsp = lengthdir_x(argument1,argument0)
 	vsp = lengthdir_y(argument1,argument0)
 }
-function func_collisioninit_pointdir()
+function func_placemeetingalt(_newx,_newy,_targetobject)
 {
-	spd = 0
-	targetx = 0
-	targety = 0
-}
-function func_solidcheck_pointdir(argument0,argument1,argument2)
-{
-	var old_x = x
-	var old_y = y
-	move_towards_point(argument0,argument1,argument2)
-	if place_meeting(x, y, obj_mapparent)
+	var _old_x = x
+	var _old_y = y
+	x = _newx
+	y = _newy
+	if place_meeting(x,y,_targetobject)
 	{
-	    x = old_x
-	    y = old_y
+	    x = _old_x
+	    y = _old_y
 	    return 1;
 	}
-	//if instance_exists(obj_platformdown)
-    //{
-	//	for (var i = 0; i < instance_number(obj_platformdown); i++)
-	//	{
-	//		enemy[i] = instance_find(obj_platformdown, i)
-	//		if (y > old_y) && ((!place_meeting(x, old_y, enemy[i])) && place_meeting(x, y, enemy[i]))
-	//		{
-	//			x = old_x
-	//			y = old_y
-	//			return 1;
-	//		}
-	//	}
-	//}
-	x = old_x
-	y = old_y
+	x = _old_x
+	y = _old_y
 	return 0;
 }
-function func_collide_pointdir()
+function func_placemeetingpath(_newx,_newy,_targetobject)
 {
-	// CODE CLEANED UP
-	var i = abs(spd);
-	var j = i;
-	while (i > 0)
+	var _old_x = x
+	var _old_y = y
+	x = _newx
+	y = _newy
+	var lerpprog = 0
+	while lerpprog < 1
 	{
-	    if !func_solidcheck_pointdir(targetx,targety,sign(spd)*0.2)
-	    {
-	        move_towards_point(targetx,targety,sign(spd)*0.1)
-	        j -= 0.1;
-		
-	        if j
-	            continue;
-	    }
-	    else
+		lerpprog += 0.1
+		if place_meeting(lerp(_old_x,x,lerpprog),lerp(_old_y,y,lerpprog),_targetobject)
 		{
-			spd = 0;
-			speed = 0;
+		    x = _old_x
+		    y = _old_y
+		    return 1;
 		}
-		break; // not in original code put prevents the game from crashing
 	}
-}
-function func_placemeetingalt(argument0,argument1,argument2)
-{
-	///obsolete...maybe?
-	var old_x = x
-	var old_y = y
-	x = argument0
-	y = argument1
-	var _targetobject = argument2
-	if place_meeting(x, y, _targetobject)
-	{
-	    x = old_x
-	    y = old_y
-	    return 1;
-	}
-	x = old_x
-	y = old_y
+	x = _old_x
+	y = _old_y
 	return 0;
+}
+function func_instanceplacepath(_newx,_newy,_targetobject)
+{
+	var _instanceatposition = noone
+	var _old_x = x
+	var _old_y = y
+	var lerpprog = 0
+	while lerpprog < 1
+	{
+		lerpprog += 0.1
+		_instanceatposition = instance_place(lerp(_old_x,_newx,lerpprog),lerp(_old_y,_newy,lerpprog),_targetobject)
+		if _instanceatposition != noone
+		{
+			break;
+		}
+	}
+	return _instanceatposition;
 }

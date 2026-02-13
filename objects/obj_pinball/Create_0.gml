@@ -2,7 +2,6 @@
 // You can write your code in this editor
 event_inherited()
 func_collisioninit()
-func_collisioninit_pointdir()
 
 currentmovespeed = 4
 acceleration = 0

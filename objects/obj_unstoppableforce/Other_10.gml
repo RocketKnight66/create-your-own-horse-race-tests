@@ -45,7 +45,8 @@ if instance_exists(obj_goal_apple)
 	}
 }
 func_move_towards_point_alt(targetangle,currentmovespeed)
-move_and_collide(hsp,vsp,obj_null)
+//move_and_collide(hsp,vsp,obj_null)
+func_collide([obj_null])
 
 
 

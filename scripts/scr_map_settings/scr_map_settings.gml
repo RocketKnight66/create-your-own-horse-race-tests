@@ -8,7 +8,7 @@ function scr_map_settings(argument0)
 	//wrap: makes horses reappear at the opposite side of the room
 	//nothing: does nothing, use if leaving the room boundaries is intended behavior
 	global.MUSIC_DELAY = 30 //how many frames the map music is initially delayed for
-	global.REMAINING_WIN_SLOTS = 1 //how many horses can win the race. doesn't apply for paradise fishing or basketball
+	global.REMAINING_WIN_SLOTS = 1 //how many horses can win the race. doesn't apply for paradise fishing (yet)
 	global.SHOW_TIMER = true //displays the timer if enabled
 	
 	switch argument0
