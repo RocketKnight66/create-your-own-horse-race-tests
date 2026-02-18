@@ -6,8 +6,7 @@ func_move_towards_point_alt(targetangle,currentmovespeed)
 func_outofboundsmeasure()
 
 var _collidables = [obj_mapparent,obj_collectibleparent]
-//move_and_collide(hsp,vsp,_collidables)
-func_collide(_collidables)
+move_and_collide(hsp,vsp,_collidables)
 
 if stepsoundcooldown > 0
 	stepsoundcooldown--
@@ -21,14 +20,14 @@ if place_meeting(x,y,obj_collectibleparent)
 	func_anticollisionclipping(obj_collectibleparent)
 }
 
-if func_placemeetingpath(x+hsp,y+vsp,obj_mapparent)
+if place_meeting(x+sign(hsp),y+sign(vsp),obj_mapparent)
 {
-	var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_mapparent)
+	var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_mapparent)
 	func_performknockback(_collidingobject)
 }
-if func_placemeetingpath(x+hsp,y+vsp,obj_collectibleparent)
+if place_meeting(x+sign(hsp),y+sign(vsp),obj_collectibleparent)
 {
-	var _collidingobject = func_instanceplacepath(x+hsp,y+vsp,obj_collectibleparent)
+	var _collidingobject = instance_place(x+sign(hsp),y+sign(vsp),obj_collectibleparent)
 	func_performknockback(_collidingobject)
 }
 

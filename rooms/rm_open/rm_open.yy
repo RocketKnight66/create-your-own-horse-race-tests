@@ -40,7 +40,6 @@
     {"name":"inst_46B443CC","path":"rooms/rm_open/rm_open.yy",},
     {"name":"inst_46163DF5","path":"rooms/rm_open/rm_open.yy",},
     {"name":"inst_2765CAB4","path":"rooms/rm_open/rm_open.yy",},
-    {"name":"inst_6359ADA9","path":"rooms/rm_open/rm_open.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -78,6 +77,7 @@
         {"$GMRInstance":"v4","%Name":"inst_46B443CC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46B443CC","objectId":{"name":"obj_horse_pink","path":"objects/obj_horse_pink/obj_horse_pink.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":416.0,},
         {"$GMRInstance":"v4","%Name":"inst_46163DF5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46163DF5","objectId":{"name":"obj_horse_cyan","path":"objects/obj_horse_cyan/obj_horse_cyan.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":128.0,},
         {"$GMRInstance":"v4","%Name":"inst_2765CAB4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2765CAB4","objectId":{"name":"obj_horse_brown","path":"objects/obj_horse_brown/obj_horse_brown.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":32.0,},
+
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_Map","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_71862943","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71862943","objectId":{"name":"obj_mapopen","path":"objects/obj_mapopen/obj_mapopen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
