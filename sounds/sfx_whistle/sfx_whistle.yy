@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.728,
+  "duration":1.679161,
   "exportDir":"",
   "name":"sfx_whistle",
   "parent":{

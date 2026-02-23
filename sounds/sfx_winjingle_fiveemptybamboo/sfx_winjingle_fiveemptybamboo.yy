@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sfx_winjingle_fiveemptybamboo",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":6.6666665,
+  "exportDir":"",
+  "name":"sfx_winjingle_fiveemptybamboo",
+  "parent":{
+    "name":"win jingles",
+    "path":"folders/Sounds/win jingles.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_winjingle_fiveemptybamboo.wav",
+  "volume":0.8,
+}

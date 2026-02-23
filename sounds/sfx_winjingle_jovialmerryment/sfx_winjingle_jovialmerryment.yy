@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.414694,
+  "duration":4.3809977,
   "exportDir":"",
   "name":"sfx_winjingle_jovialmerryment",
   "parent":{

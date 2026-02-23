@@ -76,6 +76,86 @@ function scr_map_settings(argument0)
 			}
 		}
 		break
+		case rm_e1m1:
+		{
+			func_switchmusic(sfx_mu_race1remake)
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_e1m2:
+		{
+			func_switchmusic(sfx_mu_race2remake)
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_e1m3:
+		{
+			func_switchmusic(sfx_mu_race3remake)
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_e1m4:
+		{
+			//func_switchmusic(sfx_mu_race4remake)
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
+		case rm_e1m5:
+		{
+			//func_switchmusic(sfx_mu_race5)
+			func_switchmusic(sfx_mu_race4remake)
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_e1m6t2:
+		{
+			//func_switchmusic(sfx_mu_race5)
+			func_switchmusic(sfx_mu_race4remake)
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_e1m7:
+		{
+			func_switchmusic(sfx_mu_race7)
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_e2m2:
+		{
+			func_switchmusic(sfx_mu_race5)
+			global.OUT_OF_BOUNDS_MEASURE = "wrap"
+		}
+		break
+		case rm_e2m3:
+		{
+			func_switchmusic(sfx_mu_race5)
+			global.OUT_OF_BOUNDS_MEASURE = "wrap"
+		}
+		break
+		case rm_vessel1:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
+		case rm_vessel3:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
+		case rm_vessel4:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
 		case rm_open:
 		{
 			//global.COUNTDOWN_SKIPTO = 419
@@ -152,6 +232,64 @@ function scr_map_settings(argument0)
 			global.OUT_OF_BOUNDS_MEASURE = "wrap"
 			global.MUSIC_DELAY = 240
 			global.SHOW_TIMER = false
+		}
+		break
+		case rm_ballin1:
+		{
+			func_switchmusic(sfx_mu_race5)
+			global.OUT_OF_BOUNDS_MEASURE = "wrap"
+		}
+		break
+		case rm_ballin2:
+		{
+			func_switchmusic(sfx_mu_race5)
+			global.OUT_OF_BOUNDS_MEASURE = "wrap"
+		}
+		break
+		case rm_ballin3:
+		{
+			func_switchmusic(sfx_mu_race5)
+			global.OUT_OF_BOUNDS_MEASURE = "wrap"
+		}
+		break
+		case rm_initialhrt:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_jovialraceway:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_m17:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
+		case rm_split:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_rkmap2:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
+			global.REMAINING_WIN_SLOTS = 3
+		}
+		break
+		case rm_trail:
+		{
+			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			global.COUNTDOWN_SKIPTO = 419
 		}
 		break
 	}

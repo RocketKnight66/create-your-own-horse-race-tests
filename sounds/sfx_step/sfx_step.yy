@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.216,
+  "duration":0.1859864,
   "exportDir":"",
   "name":"sfx_step",
   "parent":{

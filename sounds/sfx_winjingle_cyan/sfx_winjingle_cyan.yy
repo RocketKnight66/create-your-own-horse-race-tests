@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.284082,
+  "duration":4.233991,
   "exportDir":"",
   "name":"sfx_winjingle_cyan",
   "parent":{

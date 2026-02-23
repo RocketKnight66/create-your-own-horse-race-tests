@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":9.325714,
+  "duration":9.286009,
   "exportDir":"",
   "name":"sfx_winjingle_garbagebin",
   "parent":{

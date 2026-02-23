@@ -268,6 +268,27 @@ function scr_horse_stats(_givenidentity,_room=room)
 			}
 		}
 		break
+		case "A Mysterious Figure Neo":
+		{
+			defaultmovespeed = 2
+			accelerationamount = 0
+			maxacceleration = 0
+			overtimeaccelerationamount = 1/func_minutestoframes(1.85)
+			overtimemaxacceleration = 4
+			
+			knockbackintensity = 2
+			knockbackresistance = 1
+			
+			bodycolor = make_color_rgb(199,207,231)
+			eyesprite = spr_nightmare_amysteriousfigure2_eyes
+			winsprite = spr_horse_amysteriousfigure_win
+			portraitsprite = spr_horseportrait_amysteriousfigure
+			portraitbgsprite = spr_horseportrait_bg_nightmare
+			winjingle = sfx_winjingle_amysteriousfigure
+			jinglelength = func_secondstoframes(6.15)
+			winname = "A Mysterious Figure"
+		}
+		break
 		case "Garbage Bin":
 		{
 			accelerationamount = 0.02
@@ -296,6 +317,23 @@ function scr_horse_stats(_givenidentity,_room=room)
 			{
 				losesprite = spr_nightmare_garbagebin2_lose
 			}
+		}
+		break
+		case "Garbage Bin Neo":
+		{
+			accelerationamount = 0.02
+			
+			knockbackintensity = 2
+			knockbackresistance = 4.5
+			
+			bodycolor = make_color_rgb(0,107,107)
+			eyesprite = spr_nightmare_garbagebin2_eyes
+			winsprite = spr_horse_garbagebin_win
+			portraitsprite = spr_horseportrait_garbagebin
+			portraitbgsprite = spr_horseportrait_bg_nightmare
+			winjingle = sfx_winjingle_garbagebin
+			jinglelength = func_secondstoframes(5.5)
+			winname = "Garbage Bin"
 		}
 		break
 		case "Nighttime Knifemare":
@@ -343,6 +381,29 @@ function scr_horse_stats(_givenidentity,_room=room)
 				accelerationamount = 28/func_minutestoframes(4)
 				maxacceleration = 28
 				overtimeaccelerationamount = 0
+			}
+		}
+		break
+		case "Nighttime Knifemare Neo":
+		{
+			accelerationamount = 0.025
+			
+			knockbackintensity = 4.5
+			knockbackresistance = 1
+			
+			bodycolor = make_color_rgb(0,63,63)
+			eyesprite = spr_horse_nighttimeknifemareneo_eyes
+			winsprite = spr_horse_nighttimeknifemare_win
+			portraitsprite = spr_horseportrait_nighttimeknifemare
+			portraitbgsprite = spr_horseportrait_bg_nightmare
+			winjingle = sfx_winjingle_nighttimeknifemare
+			jinglelength = func_secondstoframes(6.6)
+			winname = "Nighttime Knifemare"
+			if _room == rm_e1m6t2
+			{
+				customhorsecollidesound = sfx_nightmarecollide
+				winsound = sfx_nightmare1
+				winsprite = spr_horse_nighttimeknifemare_win_alt
 			}
 		}
 		break
@@ -746,22 +807,87 @@ function scr_horse_stats(_givenidentity,_room=room)
 			jinglelength = func_secondstoframes(4.8)
 		}
 		break
+		case "Fuzao":
+		{	
+			bodycolor = make_color_rgb(191,110,75)
+			eyesprite = spr_horse_fuzao_eyes
+			winsprite = spr_horse_fuzao
+			portraitsprite = spr_horseportrait_fuzao
+			portraitbgsprite = spr_horseportrait_bg_china
+			winjingle = sfx_winjingle_fuzao
+			jinglelength = func_secondstoframes(4.9)
+		}
+		break
+		case "Clementine Surprise":
+		{	
+			bodycolor = make_color_rgb(255,192,0)
+			eyesprite = spr_horse_clementinesurprise_eyes
+			winsprite = spr_horse_clementinesurprise
+			portraitsprite = spr_horseportrait_clementinesurprise
+			portraitbgsprite = spr_horseportrait_bg_china
+			winjingle = sfx_winjingle_clementinesurprise
+			jinglelength = func_secondstoframes(4.8)
+		}
+		break
 		case "Five Empty Bamboo":
-		{
-			accelerationamount = 0.025
-			
-			knockbackintensity = 4.5
-			knockbackresistance = 1
-			
-			bodycolor = make_color_rgb(0,63,63)
+		{	
+			bodycolor = make_color_rgb(6,6,6)
 			eyesprite = spr_horse_fiveemptybamboo_eyes
-			winsprite = spr_nightmare_nighttimeknifemare2_win
-			portraitsprite = spr_horseportrait_nighttimeknifemare
-			portraitbgsprite = spr_horseportrait_bg_nightmare
-			customhorsecollidesound = sfx_nightmarecollide
-			winsound = sfx_nightmare1
-			winjingle = sfx_winjingle_nighttimeknifemare
-			jinglelength = func_secondstoframes(6.6)
+			winsprite = spr_horse_fiveemptybamboo
+			portraitsprite = spr_horseportrait_fiveemptybamboo
+			portraitbgsprite = spr_horseportrait_bg_china
+			winjingle = sfx_winjingle_fiveemptybamboo
+			jinglelength = func_secondstoframes(6.0)
+		}
+		break
+		case "Horse Horse Duck Horse":
+		{	
+			bodycolor = make_color_rgb(156,156,251)
+			eyesprite = spr_horse_horsehorseduckhorse_eyes
+			winsprite = spr_horse_horsehorseduckhorse
+			portraitsprite = spr_horseportrait_horsehorseduckhorse
+			portraitbgsprite = spr_horseportrait_bg_china
+			winjingle = sfx_winjingle_horsehorseduckhorse
+			jinglelength = func_secondstoframes(6.0)
+		}
+		break
+		case "Atomic Theory":
+		{	
+			eyeframeamount = 8
+			
+			bodycolor = make_color_rgb(255,255,231)
+			eyesprite = spr_horse_atomictheory_eyes
+			winsprite = spr_horse_atomictheory
+			portraitsprite = spr_horseportrait_atomictheory
+			portraitbgsprite = spr_horseportrait_bg_china
+			winjingle = sfx_winjingle_atomictheory
+			jinglelength = func_secondstoframes(4.5)
+		}
+		break
+		case "Military Eggy Glory":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(78,78,78)
+			eyesprite = spr_null
+			winsprite = spr_horse_militaryeggyglory_winplaceholder
+			portraitsprite = spr_horseportrait_militaryeggyglory
+			portraitbgsprite = spr_horseportrait_bg_china
+			secondwinsound = sfx_meg_clang
+			winjingle = sfx_winjingle_militaryeggyglory
+			jinglelength = func_secondstoframes(6.2)
+		}
+		break
+		case "Everyday Aquarium":
+		{	
+			bodycolor = make_color_rgb(192,216,192)
+			eyesprite = spr_null
+			winsprite = spr_horse_everydayaquarium
+			portraitsprite = spr_horseportrait_everydayaquarium
+			portraitbgsprite = spr_horseportrait_bg_china
+			secondwinsound = sfx_nightmaretruckstophighway
+			winjingle = sfx_winjingle_everydayaquarium
+			jinglelength = func_secondstoframes(5.3)
 		}
 		break
 	}

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":108.85224,
+  "duration":108.80302,
   "exportDir":"",
   "name":"sfx_mu_horsestambourine",
   "parent":{

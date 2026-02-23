@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.705306,
+  "duration":0.67600906,
   "exportDir":"",
   "name":"sfx_manhole",
   "parent":{

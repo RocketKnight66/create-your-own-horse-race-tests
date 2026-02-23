@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.030204,
+  "duration":2.9780045,
   "exportDir":"",
   "name":"sfx_winjingle_downtownskybox",
   "parent":{

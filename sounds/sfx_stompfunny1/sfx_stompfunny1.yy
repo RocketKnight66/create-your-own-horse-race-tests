@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.48,
+  "duration":0.44501135,
   "exportDir":"",
   "name":"sfx_stompfunny1",
   "parent":{
