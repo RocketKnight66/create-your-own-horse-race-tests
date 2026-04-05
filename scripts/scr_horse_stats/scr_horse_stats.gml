@@ -61,6 +61,7 @@ function scr_horse_stats(_givenidentity,_room=room)
 			portraitsprite = spr_horseportrait_superstitionalrealism
 			winjingle = sfx_winjingle_superstitionalrealism
 			jinglelength = func_secondstoframes(6.5)
+			
 			if _room == rm_transparancytest
 			{
 				sprite_index = spr_thelooker
@@ -135,14 +136,20 @@ function scr_horse_stats(_givenidentity,_room=room)
 			portraitsprite = spr_horseportrait_cyan
 			winjingle = sfx_winjingle_cyan
 			jinglelength = func_secondstoframes(4)
+			
+			if _room == rm_open
+			{
+				winname = "Perpetual Reverie"
+			}
 		}
 		break
 		case "Jovial Merryment":
 		{
 			//defaultmovespeed = 1.85
 			defaultmovespeed = 2
-			overtimeaccelerationamount = 1/func_minutestoframes(3)
-			anglechangechance = 10
+			overtimeaccelerationamount = 1/func_minutestoframes(2)
+			//anglechangechance = 10
+			anglechangechance = 6
 			
 			bodycolor = make_color_rgb(243,119,0)
 			eyesprite = spr_horse_jovialmerryment_eyes
@@ -321,9 +328,11 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Garbage Bin Neo":
 		{
+			defaultmovespeed = 1.1
 			accelerationamount = 0.02
 			
-			knockbackintensity = 2
+			//knockbackintensity = 2
+			knockbackintensity = 1.25
 			knockbackresistance = 4.5
 			
 			bodycolor = make_color_rgb(0,107,107)
@@ -388,7 +397,10 @@ function scr_horse_stats(_givenidentity,_room=room)
 		{
 			accelerationamount = 0.025
 			
-			knockbackintensity = 4.5
+			overtimeaccelerationamount = 1/func_minutestoframes(3)
+			
+			//knockbackintensity = 4.5
+			knockbackintensity = 3.0
 			knockbackresistance = 1
 			
 			bodycolor = make_color_rgb(0,63,63)
@@ -401,9 +413,17 @@ function scr_horse_stats(_givenidentity,_room=room)
 			winname = "Nighttime Knifemare"
 			if _room == rm_e1m6t2
 			{
+				knockbackintensity = 4.5
 				customhorsecollidesound = sfx_nightmarecollide
-				winsound = sfx_nightmare1
-				winsprite = spr_horse_nighttimeknifemare_win_alt
+				winsound = sfx_nightmare2
+				winsprite = spr_horse_nighttimeknifemare_winevil
+			}
+			if _room == rm_mapclassic6
+			{
+				knockbackintensity = 4.5
+				customhorsecollidesound = sfx_nightmarecollide
+				winsound = sfx_nightmare2
+				winsprite = spr_horse_nighttimeknifemare_winevil
 			}
 		}
 		break
@@ -809,6 +829,9 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Fuzao":
 		{	
+			defaultmovespeed = 1.6
+			overtimeaccelerationamount = 1/func_minutestoframes(1.5)
+			
 			bodycolor = make_color_rgb(191,110,75)
 			eyesprite = spr_horse_fuzao_eyes
 			winsprite = spr_horse_fuzao
@@ -820,6 +843,12 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Clementine Surprise":
 		{	
+			accelerationamount = 0.018
+			//overtimeaccelerationamount = 1/func_minutestoframes(2.5)
+			
+			angleincrementdirectionmin = -5
+			angleincrementdirectionmax = 5
+			
 			bodycolor = make_color_rgb(255,192,0)
 			eyesprite = spr_horse_clementinesurprise_eyes
 			winsprite = spr_horse_clementinesurprise
@@ -831,6 +860,15 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Five Empty Bamboo":
 		{	
+			defaultmovespeed = 2.1
+			accelerationamount = 0.009
+			overtimeaccelerationamount = 1/func_minutestoframes(3)
+			
+			knockbackintensity = 2.0
+			knockbackresistance = 1.5
+			
+			anglechangechance = 5
+			
 			bodycolor = make_color_rgb(6,6,6)
 			eyesprite = spr_horse_fiveemptybamboo_eyes
 			winsprite = spr_horse_fiveemptybamboo
@@ -842,9 +880,21 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Horse Horse Duck Horse":
 		{	
+			defaultmovespeed = 1.35
+			maxacceleration = 8
+			overtimeaccelerationamount = 1/func_minutestoframes(1.8)
+			overtimemaxacceleration = 8
+			
+			knockbackintensity = 0.7
+			knockbackresistance = 0.0
+			
+			angleincrementdirectionmin = -2.5
+			angleincrementdirectionmax = 2.5
+			anglechangechance = 2
+			
 			bodycolor = make_color_rgb(156,156,251)
-			eyesprite = spr_horse_horsehorseduckhorse_eyes
-			winsprite = spr_horse_horsehorseduckhorse
+			eyesprite = spr_horse_horsehorseduckhorse_eyes_alt
+			winsprite = spr_horse_horsehorseduckhorse_winplaceholder
 			portraitsprite = spr_horseportrait_horsehorseduckhorse
 			portraitbgsprite = spr_horseportrait_bg_china
 			winjingle = sfx_winjingle_horsehorseduckhorse
@@ -853,7 +903,9 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Atomic Theory":
 		{	
-			eyeframeamount = 8
+			accelerationamount = 0.008
+			
+			knockbackresistance = 0.0
 			
 			bodycolor = make_color_rgb(255,255,231)
 			eyesprite = spr_horse_atomictheory_eyes
@@ -866,7 +918,17 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Military Eggy Glory":
 		{	
+			defaultmovespeed = 1.1
+			accelerationamount = 0.005
+			
 			spritemergedwitheyedirection = true
+			
+			knockbackintensity = 0.0
+			knockbackresistance = 5.0
+			
+			angleincrementdirectionmin = -1
+			angleincrementdirectionmax = 1
+			anglechangechance = 10
 			
 			bodycolor = make_color_rgb(78,78,78)
 			eyesprite = spr_null
@@ -880,6 +942,18 @@ function scr_horse_stats(_givenidentity,_room=room)
 		break
 		case "Everyday Aquarium":
 		{	
+			defaultmovespeed = 2.5
+			accelerationamount = 0
+			overtimeaccelerationamount = 1/func_minutestoframes(1.8)
+			overtimemaxacceleration = 4
+			
+			knockbackintensity = 0.0
+			knockbackresistance = -0.7
+			
+			angleincrementdirectionmin = -1.5
+			angleincrementdirectionmax = 1.5
+			anglechangechance = 1
+			
 			bodycolor = make_color_rgb(192,216,192)
 			eyesprite = spr_null
 			winsprite = spr_horse_everydayaquarium
@@ -888,6 +962,396 @@ function scr_horse_stats(_givenidentity,_room=room)
 			secondwinsound = sfx_nightmaretruckstophighway
 			winjingle = sfx_winjingle_everydayaquarium
 			jinglelength = func_secondstoframes(5.3)
+		}
+		break
+		case "Midnight Mirage":
+		{	
+			defaultmovespeed = 1.4
+			overtimeaccelerationamount = 1/func_minutestoframes(1.4)
+			
+			knockbackresistance = 2.0
+			
+			angleincrementdirectionmin = -2.5
+			angleincrementdirectionmax = 2.5
+			anglechangechance = 4
+			
+			bodycolor = make_color_rgb(34,34,34)
+			eyesprite = spr_horse_midnightmirage_eyes
+			winsprite = spr_horse_midnightmirage_win
+			losesprite = spr_horse_midnightmirage_lose
+			portraitsprite = spr_horseportrait_midnightmirage
+			winjingle = sfx_winjingle_midnightmirageplaceholder
+			jinglelength = func_secondstoframes(6.0)
+		}
+		break
+		case "Rowdy Riptide":
+		{	
+			defaultmovespeed = 2.3
+			overtimeaccelerationamount = 0
+			overtimemaxacceleration = 0
+			
+			knockbackintensity = 1.5
+			knockbackresistance = -0.5
+			
+			angleincrementdirectionmin = -5
+			angleincrementdirectionmax = 5
+			anglechangechance = 1
+			
+			bodycolor = make_color_rgb(66,59,223)
+			eyesprite = spr_horse_rowdyriptide_eyes
+			winsprite = spr_horse_rowdyriptide_win
+			losesprite = spr_horse_rowdyriptide_lose
+			portraitsprite = spr_horseportrait_rowdyriptide
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Riveting Flash":
+		{	
+			defaultmovespeed = 2.0
+			//accelerationamount = 0.009
+			overtimeaccelerationamount = 1/func_minutestoframes(3.5)
+			
+			knockbackintensity = 0.7
+			knockbackresistance = -0.5
+			
+			angleincrementdirectionmin = -4
+			angleincrementdirectionmax = 4
+			anglechangechance = 6
+			
+			bodycolor = make_color_rgb(25,163,44)
+			eyesprite = spr_horse_rivetingflash_eyes
+			winsprite = spr_horse_rivetingflash_win
+			losesprite = spr_horse_rivetingflash_lose
+			portraitsprite = spr_horseportrait_rivetingflash
+			winjingle = sfx_winjingle_rivetingflash
+			jinglelength = func_secondstoframes(6.9)
+		}
+		break
+		case "Magnificent Tally":
+		{	
+			defaultmovespeed = 1.6
+			accelerationamount = 0.011
+			overtimeaccelerationamount = 1/func_minutestoframes(1.7)
+			
+			knockbackintensity = 0.8
+			knockbackresistance = 1.0
+			
+			angleincrementdirectionmin = -2
+			angleincrementdirectionmax = 2
+			anglechangechance = 2
+			
+			bodycolor = make_color_rgb(163,25,144)
+			eyesprite = spr_horse_magnificenttally_eyes
+			winsprite = spr_horse_magnificenttally_win
+			losesprite = spr_horse_magnificenttally_lose
+			portraitsprite = spr_horseportrait_magnificenttally
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Steel of Destiny":
+		{	
+			defaultmovespeed = 1.4
+			accelerationamount = 0.017
+			overtimeaccelerationamount = 1/func_minutestoframes(2.8)
+			
+			knockbackintensity = 1.5
+			knockbackresistance = 1.0
+			
+			anglechangechance = 2
+			
+			bodycolor = make_color_rgb(87,204,229)
+			eyesprite = spr_horse_steelofdestiny_eyes
+			winsprite = spr_horse_steelofdestiny_win
+			losesprite = spr_horse_steelofdestiny_lose
+			portraitsprite = spr_horseportrait_steelofdestiny
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Hopeful Radiance":
+		{	
+			defaultmovespeed = 1.25
+			accelerationamount = 0.008
+			overtimeaccelerationamount = 1/func_minutestoframes(3.2)
+			
+			knockbackintensity = 1.5
+			knockbackresistance = 1.5
+			
+			anglechangechance = 1
+			
+			bodycolor = make_color_rgb(254,229,30)
+			eyesprite = spr_horse_hopefulradiance_eyes
+			winsprite = spr_horse_hopefulradiance_win
+			losesprite = spr_horse_hopefulradiance_lose
+			portraitsprite = spr_horseportrait_hopefulradiance
+			winjingle = sfx_winjingle_hopefulradiance
+			jinglelength = func_secondstoframes(7.5)
+		}
+		break
+		case "Comet Dash":
+		{	
+			defaultmovespeed = 1.8
+			overtimeaccelerationamount = 1/func_minutestoframes(2.5)
+			
+			knockbackintensity = 1.2
+			knockbackresistance = 1.0
+			
+			angleincrementdirectionmin = -2.5
+			angleincrementdirectionmax = 2.5
+			anglechangechance = 5
+			
+			bodycolor = make_color_rgb(225,61,42)
+			eyesprite = spr_horse_cometdash_eyes
+			winsprite = spr_horse_cometdash_win
+			losesprite = spr_horse_cometdash_lose
+			portraitsprite = spr_horseportrait_cometdash
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Daydream Delivery":
+		{	
+			accelerationamount = 0.015
+			
+			knockbackintensity = 0.0
+			
+			angleincrementdirectionmin = -5
+			angleincrementdirectionmax = 5
+			
+			bodycolor = make_color_rgb(255,169,68)
+			eyesprite = spr_horse_daydreamdelivery_eyes
+			winsprite = spr_horse_daydreamdelivery_win
+			losesprite = spr_horse_daydreamdelivery_lose
+			portraitsprite = spr_horseportrait_daydreamdelivery
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Evenfall Overcast":
+		{	
+			overtimeaccelerationamount = 1/func_minutestoframes(1.5)
+			
+			knockbackintensity = 0.7
+			knockbackresistance = 1.5
+			
+			angleincrementdirectionmin = -2
+			angleincrementdirectionmax = 2
+			anglechangechance = 6
+			
+			bodycolor = make_color_rgb(77,45,139)
+			eyesprite = spr_horse_evenfallovercast_eyes
+			winsprite = spr_horse_evenfallovercast_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_evenfallovercast
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Obsidian Ashfall":
+		{	
+			defaultmovespeed = 1.7
+			accelerationamount = 0.012
+			overtimeaccelerationamount = 1/func_minutestoframes(2.8)
+			
+			knockbackintensity = 1.2
+			
+			angleincrementdirectionmin = -2
+			angleincrementdirectionmax = 2
+			anglechangechance = 1
+			
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(120,0,0)
+			eyesprite = spr_null
+			winsprite = spr_horse_obsidianashfall_win
+			losesprite = spr_horse_obsidianashfall_lose
+			portraitsprite = spr_horseportrait_obsidianashfall
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Sparkling Mana":
+		{	
+			overtimeaccelerationamount = 1/func_minutestoframes(4)
+			
+			knockbackintensity = 0.5
+			knockbackresistance = -0.5
+			
+			anglechangechance = 4
+
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(0,66,140)
+			eyesprite = spr_null
+			winsprite = spr_horse_sparklingmana_win
+			losesprite = spr_horse_sparklingmana_lose
+			portraitsprite = spr_horseportrait_sparklingmana
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Mint Condition":
+		{	
+			defaultmovespeed = 1.2
+			accelerationamount = 0.005
+			overtimeaccelerationamount = 1/func_minutestoframes(3)
+
+			knockbackresistance = 2.5
+			
+			bodycolor = make_color_rgb(41,224,151)
+			eyesprite = spr_horse_mintcondition_eyes
+			winsprite = spr_horse_mintcondition_win
+			losesprite = spr_horse_mintcondition_lose
+			portraitsprite = spr_horseportrait_mintcondition
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Rock N' Roller":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(255,0,0)
+			eyesprite = spr_null
+			winsprite = spr_horse_rocknroller_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_rocknroller
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Transcendent Tachyon":
+		{	
+			defaultmovespeed = 1.0
+			accelerationamount = 0.045
+			maxacceleration = 8
+			
+			overtimeaccelerationamount = 1/func_minutestoframes(0.8)
+			overtimemaxacceleration = 10
+			
+			knockbackintensity = 5.0
+			knockbackresistance = 8.0
+			
+			anglechangechance = 1
+
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(9,255,4)
+			eyesprite = spr_null
+			winsprite = spr_horse_transcendenttachyon_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_transcendenttachyon
+			portraitbgsprite = spr_horseportrait_bg_nightmare
+			customhorsecollidesound = sfx_nightmarecollide
+			winsound = sfx_nightmare1
+			winjingle = sfx_winjingle_biomorphcrucifixion
+			jinglelength = func_secondstoframes(6.5)
+		}
+		break
+		case "Better Luck Next Time":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(96,223,255)
+			eyesprite = spr_null
+			winsprite = spr_horse_betterlucknexttime_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_betterlucknexttime
+			winjingle = sfx_winjingle_betterlucknexttime
+			jinglelength = func_secondstoframes(9.1)
+		}
+		break
+		case "Tree Line":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(17,56,19)
+			eyesprite = spr_null
+			winsprite = spr_horse_treeline_win
+			losesprite = spr_horse_treeline_lose
+			portraitsprite = spr_horseportrait_treeline
+			winjingle = sfx_winjingle_treeline
+			jinglelength = func_secondstoframes(6.9)
+		}
+		break
+		case "Spiked Universal Nerman":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(255,200,60)
+			eyesprite = spr_null
+			winsprite = spr_horse_spikeduniversalnerman_win
+			losesprite = spr_horse_spikeduniversalnerman_lose
+			portraitsprite = spr_horseportrait_spikeduniversalnerman
+			winjingle = sfx_winjingle_spikeduniversalnerman
+			jinglelength = func_secondstoframes(8.7)
+		}
+		break
+		case "Placid Fulfillment":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(255,74,74)
+			eyesprite = spr_null
+			winsprite = spr_horse_placidfulfillment_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_placidfulfillment
+			winjingle = sfx_winjingle_placidfulfillment
+			jinglelength = func_secondstoframes(9.3)
+		}
+		break
+		case "Strawberry Shinkansen":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(255,64,80)
+			eyesprite = spr_null
+			winsprite = spr_horse_strawberryshinkansensuit_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_strawberryshinkansensuit
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Lovely Rita":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(182,255,0)
+			eyesprite = spr_null
+			winsprite = spr_horse_lovelyrita_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_lovelyrita
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
+		}
+		break
+		case "Strength in Mechs":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(148,53,116)
+			eyesprite = spr_null
+			winsprite = spr_horse_strengthinmechs_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_strengthinmechs
+			winjingle = sfx_winjingle_strengthinmechs
+			jinglelength = func_secondstoframes(5.6)
+		}
+		break
+		case "Fuchsia Fury":
+		{	
+			spritemergedwitheyedirection = true
+			
+			bodycolor = make_color_rgb(237,74,199)
+			eyesprite = spr_null
+			winsprite = spr_horse_fuchsiafury_winplaceholder
+			losesprite = -1
+			portraitsprite = spr_horseportrait_fuchsiafury
+			winjingle = sfx_winjingle_defaultdearly
+			jinglelength = func_secondstoframes(3.5)
 		}
 		break
 	}

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_horse_nighttimeknifemareneo",
-    "path":"sprites/spr_horse_nighttimeknifemareneo/spr_horse_nighttimeknifemareneo.yy",
+    "name":"spr_horse_nighttimeknifemarearmor",
+    "path":"sprites/spr_horse_nighttimeknifemarearmor/spr_horse_nighttimeknifemarearmor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

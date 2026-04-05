@@ -13,13 +13,21 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"90f2612c-e21f-467a-b7f9-13b5f797878e","name":"90f2612c-e21f-467a-b7f9-13b5f797878e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"be16bef7-286d-45d3-8627-e2f8b6ad93c4","name":"be16bef7-286d-45d3-8627-e2f8b6ad93c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"38735ed2-5d31-40ec-917e-db05711d6ab3","name":"38735ed2-5d31-40ec-917e-db05711d6ab3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bd46a6bd-23f2-444b-afb5-edc5a252d01f","name":"bd46a6bd-23f2-444b-afb5-edc5a252d01f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"d344e62c-e447-47d0-b61b-26e6ead7d903","name":"d344e62c-e447-47d0-b61b-26e6ead7d903","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"74d0611f-5710-4c37-9fe8-d99086a8a85e","name":"74d0611f-5710-4c37-9fe8-d99086a8a85e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"72cce6b7-2c87-43c7-9827-09e7cc38e47b","name":"72cce6b7-2c87-43c7-9827-09e7cc38e47b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"10722d04-601c-495f-8cfa-19b00e1c2c0e","name":"10722d04-601c-495f-8cfa-19b00e1c2c0e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"50fde9d4-8218-4afc-8f94-cff8f3cc18b3","name":"50fde9d4-8218-4afc-8f94-cff8f3cc18b3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"93c3af99-94ea-47e3-9ec1-409a4aa727ad","name":"93c3af99-94ea-47e3-9ec1-409a4aa727ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"842e6792-ce21-42cb-a37e-ade0b84ede72","name":"842e6792-ce21-42cb-a37e-ade0b84ede72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e979a0a3-cd11-4d41-b853-a2c384287e10","name":"e979a0a3-cd11-4d41-b853-a2c384287e10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"971e87f4-d183-477a-8dbd-1702469fd57c","name":"971e87f4-d183-477a-8dbd-1702469fd57c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"86837509-fc56-4540-8495-dcda43ee4725","name":"86837509-fc56-4540-8495-dcda43ee4725","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"b57a6e90-e9a4-4f61-ba4c-36a7cc927247","name":"b57a6e90-e9a4-4f61-ba4c-36a7cc927247","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5aa40ade-f13c-427c-b70d-c9561f409b8b","name":"5aa40ade-f13c-427c-b70d-c9561f409b8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -56,7 +64,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":8.0,
+    "length":16.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,26 +87,50 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"90f2612c-e21f-467a-b7f9-13b5f797878e","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a9368873-02d9-4c88-bdd3-1d75b3982ae5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be16bef7-286d-45d3-8627-e2f8b6ad93c4","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"be24fb26-81b0-45d1-ba2d-0e751770801b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"38735ed2-5d31-40ec-917e-db05711d6ab3","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bb88455b-cd0a-4990-a9e8-ba1ddc78e329","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"bb88455b-cd0a-4990-a9e8-ba1ddc78e329","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bd46a6bd-23f2-444b-afb5-edc5a252d01f","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5da3834f-7fea-4a97-9ca5-ec8e11367047","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d344e62c-e447-47d0-b61b-26e6ead7d903","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"45adcdb6-37c6-42fe-9446-4397893e604b","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"45adcdb6-37c6-42fe-9446-4397893e604b","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"74d0611f-5710-4c37-9fe8-d99086a8a85e","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5eaada64-8fe9-41d1-a4b0-75138b8573e4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"72cce6b7-2c87-43c7-9827-09e7cc38e47b","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4b49b0f4-bb6e-4923-9061-18bf6f519c49","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"4b49b0f4-bb6e-4923-9061-18bf6f519c49","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"10722d04-601c-495f-8cfa-19b00e1c2c0e","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c610a6a7-009d-48d2-9d15-18345195ee3e","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50fde9d4-8218-4afc-8f94-cff8f3cc18b3","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b25cd838-a99d-4a78-8772-c66163b06922","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"b25cd838-a99d-4a78-8772-c66163b06922","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"93c3af99-94ea-47e3-9ec1-409a4aa727ad","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ae7844e3-824e-4771-a79a-aff08f9bdebd","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"842e6792-ce21-42cb-a37e-ade0b84ede72","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"68e07c67-d354-447e-926d-c1e35a52580d","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"68e07c67-d354-447e-926d-c1e35a52580d","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e979a0a3-cd11-4d41-b853-a2c384287e10","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"818dd42e-6afb-4f6d-961b-a4c9e152a420","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"971e87f4-d183-477a-8dbd-1702469fd57c","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7d063a6e-25e4-4e58-a5d0-34be1614ae7b","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"7d063a6e-25e4-4e58-a5d0-34be1614ae7b","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"86837509-fc56-4540-8495-dcda43ee4725","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"62ae14e9-6123-4d08-b8cc-737a5c04fc14","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b57a6e90-e9a4-4f61-ba4c-36a7cc927247","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d4e1dde6-3cf7-405d-81a8-120207196543","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"d4e1dde6-3cf7-405d-81a8-120207196543","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5aa40ade-f13c-427c-b70d-c9561f409b8b","path":"sprites/spr_horse_atomictheory_eyes/spr_horse_atomictheory_eyes.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"658062bf-2747-4e4c-bb4f-3229cdab3a19","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

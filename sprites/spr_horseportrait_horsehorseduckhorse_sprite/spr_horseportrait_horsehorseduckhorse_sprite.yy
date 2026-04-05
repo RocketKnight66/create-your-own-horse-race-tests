@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"dc05dbbf-b677-42ca-8b62-7d08bcfe6fb1","name":"dc05dbbf-b677-42ca-8b62-7d08bcfe6fb1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"60ec16a7-67b4-4e8c-8f58-04128f244bfd","name":"60ec16a7-67b4-4e8c-8f58-04128f244bfd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":480,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"bebae1b4-0c0b-4192-ab65-0d03e2fa09c1","blendMode":0,"displayName":"default","isLocked":false,"name":"bebae1b4-0c0b-4192-ab65-0d03e2fa09c1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"031bca00-5ccb-481b-a3c1-eda43c08a672","blendMode":0,"displayName":"default","isLocked":false,"name":"031bca00-5ccb-481b-a3c1-eda43c08a672","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_horseportrait_horsehorseduckhorse_sprite",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc05dbbf-b677-42ca-8b62-7d08bcfe6fb1","path":"sprites/spr_horseportrait_horsehorseduckhorse_sprite/spr_horseportrait_horsehorseduckhorse_sprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"24615d42-56ad-4450-a432-9f5e27e69e16","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"60ec16a7-67b4-4e8c-8f58-04128f244bfd","path":"sprites/spr_horseportrait_horsehorseduckhorse_sprite/spr_horseportrait_horsehorseduckhorse_sprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5ef21ab0-f007-46e8-8835-67cee2703edf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

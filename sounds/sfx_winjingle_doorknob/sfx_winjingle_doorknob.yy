@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":5.250612,
+  "duration":5.203991,
   "exportDir":"",
   "name":"sfx_winjingle_doorknob",
   "parent":{

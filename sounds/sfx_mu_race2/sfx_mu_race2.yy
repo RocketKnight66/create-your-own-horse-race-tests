@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":20.924082,
+  "duration":20.882994,
   "exportDir":"",
   "name":"sfx_mu_race2",
   "parent":{

@@ -44,6 +44,7 @@ function scr_map_settings(argument0)
 		case rm_mapclassic4:
 		{
 			//func_switchmusic(sfx_mu_race4remake)
+			func_switchmusic(sfx_mu_race5)
 			global.COUNTDOWN_SKIPTO = 419
 		}
 		break
@@ -117,6 +118,10 @@ function scr_map_settings(argument0)
 			func_switchmusic(sfx_mu_race4remake)
 			global.COUNTDOWN_SKIPTO = 419
 			global.REMAINING_WIN_SLOTS = 3
+			if instance_exists(obj_announcer)
+			{
+				obj_announcer.announcertype = "spooky"
+			}
 		}
 		break
 		case rm_e1m7:
@@ -268,27 +273,39 @@ function scr_map_settings(argument0)
 		break
 		case rm_m17:
 		{
-			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			func_switchmusic(sfx_mu_chinarace6)
 			global.COUNTDOWN_SKIPTO = 419
 		}
 		break
 		case rm_split:
 		{
-			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			func_switchmusic(sfx_mu_chinarace4)
 			global.COUNTDOWN_SKIPTO = 419
 			global.REMAINING_WIN_SLOTS = 3
 		}
 		break
 		case rm_rkmap2:
 		{
-			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			func_switchmusic(sfx_mu_chinarace3)
 			global.COUNTDOWN_SKIPTO = 419
-			global.REMAINING_WIN_SLOTS = 3
+			//global.REMAINING_WIN_SLOTS = 3
 		}
 		break
 		case rm_trail:
 		{
-			func_switchmusic(choose(sfx_mu_race1,sfx_mu_race2,sfx_mu_race3))
+			func_switchmusic(sfx_mu_chinarace1)
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
+		case rm_northernforest:
+		{
+			func_switchmusic(sfx_mu_eracalling_temp)
+			global.COUNTDOWN_SKIPTO = 419
+		}
+		break
+		case rm_unconventionalunderground:
+		{
+			func_switchmusic(sfx_mu_race4remake)
 			global.COUNTDOWN_SKIPTO = 419
 		}
 		break

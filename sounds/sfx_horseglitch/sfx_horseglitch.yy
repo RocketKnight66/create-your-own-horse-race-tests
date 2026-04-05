@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.168,
+  "duration":3.14,
   "exportDir":"",
   "name":"sfx_horseglitch",
   "parent":{
